@@ -1,0 +1,245 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="d45627b5-0655-48f0-b58c-a4f718c668df" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Datawarehouse</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Dim Afstandscategorie</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="43edc8b7-4adf-402d-8a4d-c73faf1a3492">
+          <ID>Dim Afstandscategorie</ID>
+          <Name>Dim Afstandscategorie</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="1e5d6e2b-e29e-49a2-b7d8-b3c6b5b2edd6">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Afstandscategorie</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Bekleding</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="6e277eb9-23f8-47dd-b693-9be22a8ef59e">
+          <ID>Dim Bekleding</ID>
+          <Name>Dim Bekleding</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2dccbe18-77c0-4b11-92cb-3e20b6326a9f">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Bekleding</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Kleur</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="40a5ebb2-3848-4773-ae69-c58d9ea84017">
+          <ID>Dim Kleur</ID>
+          <Name>Dim Kleur</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8cadc58c-13d7-45d5-b9d7-44134fdfa3ff">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Kleur</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Locatie</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3266d1a4-8dd8-438f-a940-acfb5bcddbc0">
+          <ID>Dim Locatie</ID>
+          <Name>Dim Locatie</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="01aea7e8-7f74-4a39-a91f-2b35d23fa0d2">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Locatie</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Mix Dag</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="679befda-7e77-4910-8177-f8ccfc429b8d">
+          <ID>Dim Mix Dag</ID>
+          <Name>Dim Mix Dag</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8857d1e3-092e-484c-9ea4-ae2e39d60b30">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_MixDag</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Maatsysteem</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8553c312-bace-4b66-8cbb-7500bd725940">
+          <ID>Dim Maatsysteem</ID>
+          <Name>Dim Maatsysteem</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="83f781c8-a720-4601-9bdf-9dbf4b610d14">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Maatsysteem</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Motor</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fccf9cf6-7eb5-43c4-b985-4fc4831814ea">
+          <ID>Dim Motor</ID>
+          <Name>Dim Motor</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e8c65336-1419-418c-91c2-004ec74d1e4a">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Motor</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Onderdeel</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3d0ca098-003b-491c-b727-0a95497b52d5">
+          <ID>Dim Onderdeel</ID>
+          <Name>Dim Onderdeel</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="e501f4b2-7ebd-458b-b40e-317f2f4ef416">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Onderdeel</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Prijscategorie</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="70d41ff0-1a81-47b8-8f24-cd8c8fc52f04">
+          <ID>Dim Prijscategorie</ID>
+          <Name>Dim Prijscategorie</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="812b85be-32a9-4814-be08-f49c2697d466">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Prijscategorie</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Taal</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="92aa65b7-2b98-4ea5-8f0f-915ef88f7c63">
+          <ID>Dim Taal</ID>
+          <Name>Dim Taal</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="da4cc6f9-8a79-4237-a5f9-ada85c592b37">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_Taal</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Dim Wagen Type</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="86f3a376-1b70-49f5-ab7b-ac57485c8cc9">
+          <ID>Dim Wagen Type</ID>
+          <Name>Dim Wagen Type</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a7394d73-5e44-4ae1-a61a-47e13fe6c624">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Dim_WagenType</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Feit Samenstelling Product</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0d00bd76-cce1-4d17-890d-e0404cb6f526">
+          <ID>Feit Samenstelling Product</ID>
+          <Name>Feit Samenstelling Product</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad71e42b-92b5-47c5-bddf-a470ea90ce52">
+            <DataSourceViewID>Datawarehouse</DataSourceViewID>
+            <TableID>dbo_Feit_SamenstellingProduct</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

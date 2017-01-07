@@ -1,0 +1,886 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="537e07b7-7ad0-44e8-8b30-6c1234f7d2b6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Datawarehouse</ID>
+  <Name>Datawarehouse</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d636551f-3bf4-463a-bd58-9a5a26318b49">
+      <ID>Dim Afstandscategorie</ID>
+      <Name>Dim Afstandscategorie</Name>
+      <DimensionID>Dim Afstandscategorie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a34407b7-ed13-4c44-bb82-c20dfb0644c2">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ffecb321-235a-48ab-9ecb-ce6f344e75ea">
+      <ID>Dim Bekleding</ID>
+      <Name>Dim Bekleding</Name>
+      <DimensionID>Dim Bekleding</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="03599cda-6f10-45c4-8ce3-7e9e0cb50d14">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1ade26cd-db3e-4ec4-b4c7-06923e01d561">
+      <ID>Dim Kleur</ID>
+      <Name>Dim Kleur</Name>
+      <DimensionID>Dim Kleur</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="204ee56c-c934-4d9e-ab80-f657a2414010">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5580d6e6-d55f-4f0f-8117-7145191b9b62">
+      <ID>Dim Locatie</ID>
+      <Name>Dim Locatie</Name>
+      <DimensionID>Dim Locatie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="32be238b-1bbf-4dc1-8e8f-1e4eefd3d406">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ce06ebdd-9ecd-4a72-ba38-ac7c0e0062dd">
+      <ID>Dim Mix Dag</ID>
+      <Name>Dim Mix Dag</Name>
+      <DimensionID>Dim Mix Dag</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a2878164-9913-41d6-b73c-9f3b075ef7ba">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="cef2d695-391e-4285-ae18-aeff8b96821a">
+      <ID>Dim Maatsysteem</ID>
+      <Name>Dim Maatsysteem</Name>
+      <DimensionID>Dim Maatsysteem</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="00440411-3fc5-411a-94b4-cfcc4df615e8">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="8ef46f1d-87c9-4c5a-9f09-5cf187951741">
+      <ID>Dim Motor</ID>
+      <Name>Dim Motor</Name>
+      <DimensionID>Dim Motor</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="846d50ea-f32e-4f67-912b-96c2d09f2505">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6fdad786-653c-4f07-b063-658330f6ae22">
+      <ID>Dim Onderdeel</ID>
+      <Name>Dim Onderdeel</Name>
+      <DimensionID>Dim Onderdeel</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="bb72aa51-ed02-461d-8284-1e8fb3130886">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="e1640311-07e2-4cf4-864f-16dcaadec6dd">
+      <ID>Dim Prijscategorie</ID>
+      <Name>Dim Prijscategorie</Name>
+      <DimensionID>Dim Prijscategorie</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="6bee1d99-b4f9-4265-b21a-3d31aa6cb1d2">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="582e8085-6c8f-4297-8878-bba6bfed8a05">
+      <ID>Dim Taal</ID>
+      <Name>Dim Taal</Name>
+      <DimensionID>Dim Taal</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="1efc0d6a-8734-4305-86fd-7f57cbf5b8e9">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="1a47ac25-a00a-4ebe-9146-24867932166c">
+      <ID>Dim Wagen Type</ID>
+      <Name>Dim Wagen Type</Name>
+      <DimensionID>Dim Wagen Type</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4af73a17-9f37-4cfc-b409-dc8824ed53a3">
+          <AttributeID>ID</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="7c4e502a-19f4-4f3b-83dc-2ff5d524d2c3">
+      <ID>Dim Afstandscategorie</ID>
+      <Name>Dim Afstandscategorie</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="73377229-883b-4af7-9549-a434b41a86a6">
+          <ID>Afstand</ID>
+          <Name>Afstand</Name>
+          <Source dwd:design-time-name="e45f4c32-cea3-4487-9dd6-5e2dd3ee6fef">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="745dfff6-f748-405a-b208-ee70a98b330a">
+              <TableID>dbo_Dim_Afstandscategorie</TableID>
+              <ColumnID>Afstand</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="b2e30138-5d98-471f-9948-41a21f8e1e2f">
+          <ID>Dim Afstandscategorie Count</ID>
+          <Name>Dim Afstandscategorie Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="fec88d59-3508-4cb1-9e51-4a303acb1ece">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b3ec80de-cafe-4f3b-957c-cfb2622eff3b">
+              <TableID>dbo_Dim_Afstandscategorie</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="854d1faf-2301-45b3-a27b-18a70582db97">
+          <CubeDimensionID>Dim Afstandscategorie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="88ccef3a-798c-4060-9f71-999cd218f7ac">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="625041c8-1f14-47d3-818c-45cf81c10a8a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e880a291-16b9-457d-8a88-7effaac4e55d">
+                    <TableID>dbo_Dim_Afstandscategorie</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="eb3fb140-aed1-4bf6-abe8-a694663c5bb3">
+      <ID>Dim Bekleding</ID>
+      <Name>Dim Bekleding</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="660bab15-3363-4ff8-8743-f50fe1ecca1d">
+          <ID>Dim Bekleding Count</ID>
+          <Name>Dim Bekleding Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="26951528-c7bb-4a9a-9a56-4e645764fa02">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="73aa1f58-739b-4c32-918b-e6abc9c4101b">
+              <TableID>dbo_Dim_Bekleding</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f08678ec-5489-4e5e-95c9-ad641ecd33ea">
+          <CubeDimensionID>Dim Bekleding</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="63a696f2-3361-4cb2-ae75-a58448069d7f">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d7ac05b1-ca5e-48c3-b620-787b61afc2dd">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="efe41f07-cf59-4d73-9abe-6244f0d8a9e5">
+                    <TableID>dbo_Dim_Bekleding</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="6c4beaee-35e8-4160-ae80-e63de71e85cb">
+      <ID>Dim Kleur</ID>
+      <Name>Dim Kleur</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="7515e0c3-b2a0-4c5d-aac7-dc7ae712fb8a">
+          <ID>Dim Kleur Count</ID>
+          <Name>Dim Kleur Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="1308d482-fc7b-47c9-8571-98d8b7f010db">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="0143dd51-fb91-4d5e-b35e-f5a2d8ebde54">
+              <TableID>dbo_Dim_Kleur</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="2f3f8a4e-93f8-4acd-b44b-9fcfd4d08baf">
+          <CubeDimensionID>Dim Kleur</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="725ee36a-29c3-4771-9a43-ac2298411dab">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b3d8578a-28fa-4827-a731-90bbd105bc10">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7cf7375e-f13e-4729-ac6d-e86cc117aac0">
+                    <TableID>dbo_Dim_Kleur</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="36710db5-273b-450a-a257-fab807ce066b">
+      <ID>Dim Locatie</ID>
+      <Name>Dim Locatie</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="1a989234-2b85-45ce-9ba1-a355bd5149f5">
+          <ID>Dim Locatie Count</ID>
+          <Name>Dim Locatie Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a4e1e5dd-2ace-4866-8eb1-8a183ce8e255">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="902b4ab3-f378-4b45-818c-a4bcc1cede5f">
+              <TableID>dbo_Dim_Locatie</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="09ed6f05-36a7-48de-bc55-4a2d4578dc4e">
+          <CubeDimensionID>Dim Locatie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4ecb294c-08e5-44ab-9f1c-c9479b82b295">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="6560f572-087f-4bcb-b074-780ccd40c580">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3739795b-8e48-44f5-99c3-6f1c17283dc9">
+                    <TableID>dbo_Dim_Locatie</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="cc813f86-72d2-4145-8d9d-7dde51c15eee">
+      <ID>Dim Mix Dag</ID>
+      <Name>Dim Mix Dag</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="91c18903-9506-4c00-a6be-3691c7109e2d">
+          <ID>Dim Mix Dag Count</ID>
+          <Name>Dim Mix Dag Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="26a5ee2b-b6d9-421f-a98b-36af20a89d92">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="976a912e-944b-4f17-aa9c-b1ecc9fd07ee">
+              <TableID>dbo_Dim_MixDag</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="607bed34-a6e4-43cd-a5a3-079eed1a99ca">
+          <CubeDimensionID>Dim Mix Dag</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3f49e8bb-d697-4e46-b5c8-034aca08e139">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="b4b49dc6-4313-494e-bf90-f48e646a6c70">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7646a43a-aa36-4d73-8189-9c9e4dce02b0">
+                    <TableID>dbo_Dim_MixDag</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="a4d8f3ae-529d-4fd9-97a0-ea941fc35ada">
+      <ID>Dim Maatsysteem</ID>
+      <Name>Dim Maatsysteem</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e67b2b11-1bdd-4a2b-9d5c-3bf1bb9bb852">
+          <ID>Dim Maatsysteem Count</ID>
+          <Name>Dim Maatsysteem Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="d82bde81-292d-4deb-b6b3-08a6cc47216b">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="5b099cff-a928-4714-8fdc-05b9aecabdac">
+              <TableID>dbo_Dim_Maatsysteem</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="d2faf131-f9da-474b-9882-d4f2507143a8">
+          <CubeDimensionID>Dim Maatsysteem</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="34bb592b-4573-4272-8610-63eec5453e83">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2c48eb70-3325-46a8-b82f-97f73fc9c41a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2d1eaf11-1c09-4324-bab0-df9fb5da01b4">
+                    <TableID>dbo_Dim_Maatsysteem</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="72a3ebfe-2b77-423d-be9c-a1c1a2583265">
+      <ID>Dim Motor</ID>
+      <Name>Dim Motor</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="11136f39-03a3-4482-8458-eef52458a380">
+          <ID>Dim Motor Count</ID>
+          <Name>Dim Motor Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="56cea9b7-8305-409c-b9b2-cbf94119c648">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="84c4009e-80de-4c66-b32e-46a2f37f6b29">
+              <TableID>dbo_Dim_Motor</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="03ca9289-f8a1-456a-bb93-8b09f5f59387">
+          <CubeDimensionID>Dim Motor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="65df312f-80bb-4968-8188-757b0286579a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a8e99a30-5cbb-4aca-93cf-6dd22bd4c552">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4f5e0fd7-426b-4f6c-b930-ac415a51f911">
+                    <TableID>dbo_Dim_Motor</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="2c1ed99a-5456-424f-8291-b93ca2d787ca">
+      <ID>Dim Onderdeel</ID>
+      <Name>Dim Onderdeel</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="0d09ea68-5f67-4135-b679-583b8d90f510">
+          <ID>Dim Onderdeel Count</ID>
+          <Name>Dim Onderdeel Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="a2c89095-0003-40b7-b714-0872ab7097d7">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b5e28c1f-13c8-46be-8e3d-8083c6898901">
+              <TableID>dbo_Dim_Onderdeel</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a5607216-c228-4301-8d0c-afe9aeb62591">
+          <CubeDimensionID>Dim Onderdeel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="58fbe927-dfa3-4d2a-8170-0f57ca7b3070">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="92e7d485-ccd7-4eac-989f-90085b73ec5f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="aa72ac4b-7c8a-409a-a699-7b6de0d1f518">
+                    <TableID>dbo_Dim_Onderdeel</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="11935457-256e-4a56-8364-4b8553bb77d7">
+      <ID>Dim Prijscategorie</ID>
+      <Name>Dim Prijscategorie</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a407ad01-2699-4f6b-885f-666e71f0d64e">
+          <ID>Totaal Prijs</ID>
+          <Name>Totaal Prijs</Name>
+          <Source dwd:design-time-name="1d018bac-f9f6-4293-b892-2ca01d2f38b7">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="2263f5eb-1de2-418e-a65d-a8e50ec7b114">
+              <TableID>dbo_Dim_Prijscategorie</TableID>
+              <ColumnID>TotaalPrijs</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="34bf0dce-e1aa-4fa6-bf15-ed07f690c00f">
+          <ID>Dim Prijscategorie Count</ID>
+          <Name>Dim Prijscategorie Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="329991a4-48f3-44ae-889b-d5f32fe872d4">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="d792bfc3-b9e1-4cc1-a4a9-99b01472b2eb">
+              <TableID>dbo_Dim_Prijscategorie</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="66679986-414e-43a4-a93f-d92cdadee6f2">
+          <CubeDimensionID>Dim Prijscategorie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="5617b865-23ab-404a-a86c-db68052630b5">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2ecf3006-2b79-4fa6-bf79-90cdccebb09f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="24e440c4-175e-4ffa-9dad-2a4781ef72c1">
+                    <TableID>dbo_Dim_Prijscategorie</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="2df819fb-11ff-4c90-ba28-052d99359ef1">
+      <ID>Dim Taal</ID>
+      <Name>Dim Taal</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="46a50b00-f00e-47b6-bf96-a89ef3c6da37">
+          <ID>Dim Taal Count</ID>
+          <Name>Dim Taal Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="e9f6aaf4-9d55-4706-a54d-8bf8a2124823">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="aa52b04f-c9d3-49d8-97ef-d5680265b8bb">
+              <TableID>dbo_Dim_Taal</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="8afa7308-a29c-4f2f-af9d-91c14dc88b8f">
+          <CubeDimensionID>Dim Taal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1cbfa8a9-0e64-4ab8-ad25-1eb641f70859">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="d97bd179-89e9-48bc-bc82-465c5c895bde">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="af04ac68-7b28-44a8-afdd-6eede57bbd65">
+                    <TableID>dbo_Dim_Taal</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="c5408139-3cfd-40f9-a522-07668211f1f0">
+      <ID>Dim Wagen Type</ID>
+      <Name>Dim Wagen Type</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="dc86af3f-e561-4075-989e-b3e22db8edf7">
+          <ID>Dim Wagen Type Count</ID>
+          <Name>Dim Wagen Type Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="606e153f-af0c-42ac-bb1a-9acd322adbb3">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="87a06e86-07fe-4dee-97c5-9ac83150130e">
+              <TableID>dbo_Dim_WagenType</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="46e28fdb-652f-482a-a0a5-2ca8395e9fd1">
+          <CubeDimensionID>Dim Wagen Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b11973d7-36cb-4c92-be8b-86393d803dce">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="fa6759a7-90a3-4f1c-b9a6-fdc5c320f73a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bcc00fc0-9aab-4237-9f30-8d479625bd8e">
+                    <TableID>dbo_Dim_WagenType</TableID>
+                    <ColumnID>ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="413b676e-6b5d-4f00-b831-8ef878bf875f">
+      <ID>Feit Samenstelling Product</ID>
+      <Name>Feit Samenstelling Product</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="e5be91ae-ec2f-470c-b04c-dd53bad296eb">
+          <ID>Feit Samenstelling Product Count</ID>
+          <Name>Feit Samenstelling Product Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="092668fa-ff9e-4b5f-b337-ae6afd7aa29c">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="6949e0cc-ee46-46d1-8bfc-2d5a33d7cb1b">
+              <TableID>dbo_Feit_SamenstellingProduct</TableID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Molap</StorageMode>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="77733cfa-c26f-4545-91df-bb44c1b34e29">
+          <CubeDimensionID>Dim Bekleding</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9d6826ef-6cbb-4e9a-8e2e-62f87a0da19a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c283e9df-858b-4ec1-8241-32e6a1809d38">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="81d2fed8-32c8-4f64-be2c-d2cfacd405cb">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>Bekleding_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="93958651-c464-4eb5-8be9-2e000378f1ff">
+          <CubeDimensionID>Dim Taal</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="7e7759ad-35e3-44f9-943d-0ec30270330d">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0c092fd4-4cf0-4e92-a4ed-44a9a23dd29e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="567d2874-2a14-4c00-99e2-e207306d64b7">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>Taal_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="5da9cc0d-3b8d-44a4-9e6e-496d0021b29e">
+          <CubeDimensionID>Dim Locatie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e05b36df-7ccb-4518-b7f7-0b39ff7fff8a">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="e0bfed70-6cde-4531-833e-5f9d2ef8fa51">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b8e8f1d0-9e7b-452d-bc8f-1758a3c1d224">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>Locatie_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="e47f41e9-71c3-4c6f-836d-13d70166e9ea">
+          <CubeDimensionID>Dim Afstandscategorie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2bd89639-8e55-4b67-9043-74fb60e67ccf">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eb9e6dd0-6ef5-4927-8236-41319b84994c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7584ddf0-be08-4f18-85da-d6711b46a282">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>AfstandsCategorie_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="0802ba5d-cca5-43af-bbd8-250a602e0366">
+          <CubeDimensionID>Dim Maatsysteem</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2499afa2-e082-4118-80a7-428f414fc8cd">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c9cfa2f4-4c32-4471-b33b-5c84457f27ec">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3c64eaea-1bff-4fbf-be78-a8b1dbb31367">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>MaatSysteem_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a42af8f2-0f7e-411f-aadd-9176d90ecea6">
+          <CubeDimensionID>Dim Prijscategorie</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="1f861202-9320-410a-a187-bef0f15fa8f9">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="4af313b8-65d7-4e41-98a2-606452292490">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="8f28479c-1656-4f03-8e69-d9dd4ea71084">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>PrijsCategorie_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ee79198d-dc69-4ca5-b492-9d0d66d31de8">
+          <CubeDimensionID>Dim Motor</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="95fd9be0-4f9d-48dd-b491-864f99231810">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="ab88c5c4-a24c-4fbb-a782-b2876157f80c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d70e0e2e-8fbd-4738-a270-f1d825feef80">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>Motor_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="82882206-f689-480d-9158-2625e14cc9b8">
+          <CubeDimensionID>Dim Onderdeel</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="f8754406-f338-4a6b-a765-130c54b42613">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0506c648-6cfa-4309-bd80-4ea6ba2a50f5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f7dda1c7-6304-4c30-bf27-9ef9fe7f655a">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>Onderdeel_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="b54faa42-3c03-4948-9fa1-fe3c4aa1e907">
+          <CubeDimensionID>Dim Mix Dag</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c45ebf69-af0c-489d-ba71-36bf32ddc80b">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="20f5cb4e-8bab-4490-b30f-8a285e49aa12">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4127a210-7d8c-4b11-95d9-fed56cc6a3b7">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>MixDag_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="f1457ef0-f97d-4e0b-a756-10e9eeaa46e6">
+          <CubeDimensionID>Dim Wagen Type</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="90f3d766-e7b3-43c6-bfba-597d211ccff0">
+              <AttributeID>ID</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="0ab814c1-a52e-4fda-ad1d-a8b4091b1e39">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7aeb618a-4c42-4fa3-8629-0e9f0e657838">
+                    <TableID>dbo_Feit_SamenstellingProduct</TableID>
+                    <ColumnID>WagenType_ID</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="79179730-31c6-45c5-9db3-7d1a8a8ca5d3">
+    <DataSourceViewID>Datawarehouse</DataSourceViewID>
+  </Source>
+</Cube>
